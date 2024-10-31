@@ -1,6 +1,8 @@
-const Card = () => {
+const Card = ({ children }) => {
   return (
-      <div className="bg-[red] w-[300px] h-[70vh] rounded-[20px]"></div>
+    <div className="bg-[blue] w-[300px] h-[70vh] rounded-[20px] shadow-lg p4">
+      {children}
+    </div>
   );
 };
 
