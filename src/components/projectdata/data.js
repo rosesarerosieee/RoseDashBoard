@@ -5,7 +5,6 @@ import WeatherChecker from "../../assets/Weather-Checker-Desktop.png";
 import Currency from "../../assets/Currency-Desktop.png";
 import Qr from "../../assets/Qr-Desktop.png";
 
-
 const project = [
   {
     desktop: TodoList,
@@ -50,6 +49,5 @@ const project = [
     link: "https://qrcode-generator-rose.netlify.app/",
   },
 ];
-
 
 export default project;
