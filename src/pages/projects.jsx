@@ -15,7 +15,6 @@ const ProjectPages = () => {
             onMouseLeave={() => setHoveredIndex(null)}
           >
             {hoveredIndex === index ? (
-              // Show description and link on hover with fixed height
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-75 text-white p-4 h-full">
                 <p className="text-sm px-2 mb-4">{proj.description}</p>
                 <a
@@ -28,7 +27,6 @@ const ProjectPages = () => {
                 </a>
               </div>
             ) : (
-              // Show image with fixed height
               <img
                 src={proj.desktop}
                 alt={proj.projectName}
@@ -37,9 +35,15 @@ const ProjectPages = () => {
             )}
           </div>
           <div className="w-full text-center mb-4">
-            <h1 className="text-white text-lg font-extrabold truncate h-[30px] flex items-center justify-center">
+            <a
+              href={proj.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-lg font-extrabold flex items-center justify-center gap-2 bg-gray-700 p-2 rounded-lg hover:bg-gray-600"
+            >
               {proj.projectName}
-            </h1>
+              <span className="text-cyan-400">→</span>
+            </a>
           </div>
         </Card>
       ))}
