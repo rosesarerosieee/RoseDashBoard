@@ -6,7 +6,7 @@ const ProjectPages = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="flex flex-wrap gap-4 justify-center">
+    <div className="flex flex-wrap gap-4 justify-center xl:grid xl:grid-cols-3 xl:p-[200px]">
       {project.map((proj, index) => (
         <Card key={index}>
           <div
