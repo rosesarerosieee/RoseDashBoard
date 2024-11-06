@@ -10,7 +10,7 @@ const ProjectPages = () => {
       {project.map((proj, index) => (
         <Card key={index}>
           <div
-            className="w-full h-[150px] rounded-lg overflow-hidden border-2 border-gray-500 mb-4 relative"
+            className="w-full h-[250px] rounded-lg overflow-hidden border-2 border-gray-500 mb-4 relative"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
