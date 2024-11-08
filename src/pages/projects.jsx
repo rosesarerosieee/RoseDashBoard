@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Card from "../components/card";
 import project from "../components/projectdata/data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Icons from "../assets/icons/icon";
 
 const ProjectPages = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -44,6 +46,12 @@ const ProjectPages = () => {
               {proj.projectName}
               <span className="text-cyan-400">→</span>
             </a>
+          </div>
+          <div className="w-full text-center mb-4 z-[9999]  font-extrabold text-[2rem]">
+            {proj.Icons &&
+              proj.Icons.map((iconkey, i) => (
+                <FontAwesomeIcon key={i} icon={Icons[iconkey]} />
+              ))}
           </div>
         </Card>
       ))}

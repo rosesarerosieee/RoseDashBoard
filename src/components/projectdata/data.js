@@ -4,6 +4,7 @@ import Dictionary from "../../assets/Dictionary-desktop.png";
 import WeatherChecker from "../../assets/Weather-Checker-Desktop.png";
 import Currency from "../../assets/Currency-Desktop.png";
 import Qr from "../../assets/Qr-Desktop.png";
+import Icons from "../../assets/icons/icon";
 
 const project = [
   {
@@ -12,6 +13,7 @@ const project = [
     description:
       "A web app where you can create an account, create tasks, mark them as completed, and delete them. Helps track your daily tasks.",
     link: "https://2doweb-app.netlify.app/",
+    Icons: ["react", "firebase", "css"],
   },
   {
     desktop: StudywMe,
@@ -19,6 +21,7 @@ const project = [
     description:
       " web app that allows you to input tasks for studying and track your progress by marking them as done. It includes a timer to help monitor your study sessions and features Lofi music to aid concentration",
     link: "https://studywithme-web-app.netlify.app/",
+    Icons: ["react", "css"],
   },
   {
     desktop: Dictionary,
@@ -26,6 +29,7 @@ const project = [
     description:
       "is a dynamic and user-friendly application that allows users to search for any word and instantly view its definition.",
     link: "https://dictionary-rose.netlify.app/",
+    Icons: ["react", "css", "tailwind"],
   },
   {
     desktop: WeatherChecker,
@@ -33,6 +37,7 @@ const project = [
     description:
       "  is a web app that allows you to detect the weather for every City in country. The Background of the website will Change based on the current temperature of detected City.",
     link: "https://rosesarerosieee.github.io/Weather-Checker/",
+    Icons: ["react", "css"],
   },
   {
     desktop: Currency,
@@ -40,6 +45,7 @@ const project = [
     description:
       " is a web application that allows users to convert different currencies in the world.",
     link: "https://currency-converter-rose.netlify.app/",
+    Icons: ["react", "css"],
   },
   {
     desktop: Qr,
@@ -47,6 +53,7 @@ const project = [
     description:
       "is a dynamic and user-friendly web application that allows users to put a Link of a youtube video and it will conveted it into Qr.",
     link: "https://qrcode-generator-rose.netlify.app/",
+    Icons: ["react", "css"],
   },
 ];
 
