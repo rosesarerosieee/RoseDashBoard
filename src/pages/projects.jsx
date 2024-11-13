@@ -9,7 +9,7 @@ const ProjectPages = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="flex flex-wrap gap-4 justify-center xl:grid xl:grid-cols-3 xl:p-[200px]">
+    <div className="flex flex-wrap gap-4 justify-center xl:grid xl:grid-cols-3 xl:p-[300px]">
       {project.map((proj, index) => (
         <Card key={index}>
           <div
@@ -43,7 +43,7 @@ const ProjectPages = () => {
                 href={proj.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[black] text-lg font-extrabold flex items-center justify-center gap-2 p-2 rounded-lg"
+                className="text-[black] text-lg font-extrabold flex items-center justify-center gap-2 p-2 rounded-lg hover:text-[blue]"
               >
                 {proj.projectName}{Icons.arrowUp}
                 <span className="text-cyan-400"></span>
