@@ -55,6 +55,7 @@ const project = [
     link: "https://qrcode-generator-rose.netlify.app/",
     Icons: ["react", "css"],
   },
+  
 ];
 
 export default project;

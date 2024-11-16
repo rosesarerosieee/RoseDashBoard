@@ -4,12 +4,11 @@ import project from "../components/projectdata/data";
 import Icons from "../assets/icons/icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 const ProjectPages = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="flex flex-wrap gap-4 justify-center xl:grid xl:grid-cols-3 xl:p-[300px] xl:bg-[lightpink]">
+    <div className="flex flex-wrap gap-4 justify-center items-center xl:grid xl:grid-cols-3 xl:bg-[lightpink] xl:place-items-center p-[100px]">
       {project.map((proj, index) => (
         <Card key={index}>
           <div
@@ -38,16 +37,16 @@ const ProjectPages = () => {
             )}
           </div>
           <div className="w-full text-center mb-4">
-          
-              <a
-                href={proj.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[lightpink] text-lg font-extrabold flex items-center justify-center gap-2 p-2  text-pretty rounded-lg hover:text-[lightblue] hover:underline"
-              >
-                {proj.projectName}{Icons.arrowUp}
-                <span className="text-cyan-400"></span>
-              </a>
+            <a
+              href={proj.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[lightpink] text-lg font-extrabold flex items-center justify-center gap-2 p-2  text-pretty rounded-lg hover:text-[lightblue] hover:underline"
+            >
+              {proj.projectName}
+              {Icons.arrowUp}
+              <span className="text-cyan-400"></span>
+            </a>
           </div>
           <div className="w-full text-center mb-4 z-[9999]  font-extrabold text-[2rem] flex items-center justify-center flex-row gap-[20px]">
             {proj.Icons.map((iconName) => (
